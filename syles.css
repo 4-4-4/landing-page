@@ -1,0 +1,169 @@
+@charset "UTF-8";
+body {
+  margin: 1.5em;
+  font-family: "poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(/ヨクタケタゴハンE【japan】♂.jpeg);
+  background-size: cover;
+  background-position-x: 20%;
+  background-position: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+section.hero {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+span {
+  color: peachpuff;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 10;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out ul;
+  transition-list-style-type: none;
+  transition-padding: 0;
+  transition-margin-top: 8em;
+}
+nav a {
+  color: peachpuff;
+  padding: 0.75em 2em;
+  display: block;
+  width: 100%;
+}
+nav a:hover {
+  background-color: peru;
+}
+
+svg {
+  fill: peachpuff;
+}
+
+.close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header svg {
+  fill: white;
+  width: 3em;
+  margin-top: -0.6em;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 2em;
+  line-height: 3.4rem;
+}
+
+.subhead {
+  font-size: 1.2rem;
+  position: absolute;
+  margin-top: 0.5;
+}
+
+.hero {
+  color: white;
+  height: 90vh;
+}
+.hero svg {
+  position: absolute;
+  bottom: 2em;
+  width: 1em;
+  stroke: white;
+}
+.hero svg path {
+  fill: white;
+}
+
+.rest img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rest .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: peachpuff;
+}
+.rest .text {
+  font-size: small;
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: "poppins", sans-serif;
+  }
+  nav {
+    transform: translateX(0);
+    background: none;
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  nav ul {
+    display: flex;
+    margin: zero;
+    list-style: none;
+  }
+  nav a {
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  nav a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+  svg.close {
+    display: none;
+  }
+  svg.burger {
+    display: none;
+  }
+  .hero-img {
+    left: unset;
+    right: 0;
+  }
+}/*# sourceMappingURL=syles.css.map */
